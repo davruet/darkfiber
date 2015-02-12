@@ -5,6 +5,7 @@ width: auto; height: auto; z-index: -100;
 
 }
 
+
 body {
     margin:0px;
     background-color:#fff;
@@ -12,12 +13,27 @@ body {
 }
 
 .container-fluid {
-    text-align:right;
     font-family: 'Petrona', serif;
     font-size: 12px;
     padding-right:0px;
     padding-left:0px;
 
+}
+
+.alternating-row:nth-child(even) {
+    text-align:right;
+}
+.alternating-row:nth-child(odd) {
+    text-align:right;
+    background-color: #444;
+    color: #ddd;
+}
+.alternating-row:nth-child(odd) a:visited {
+    color: #83b7ff;
+}
+
+.alternating-row:nth-child(odd) a:link {
+    color: #83b7ff;
 }
 
 .container-fluid>div {
@@ -59,6 +75,7 @@ a.btn:hover {
 }
 #videocontainer {
     position:relative;
+    padding: 0px;
 }
 #overlay {
   position: absolute; 
